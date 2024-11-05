@@ -1,0 +1,157 @@
+body{
+    background:rgb(38, 185, 234);
+    display: grid;
+    place-items: center;
+    perspective: 300px;
+
+}
+@keyframes run {
+    from { transform: translateX(-400px); } 
+    to { transform: translateX(400px); } 
+}
+div {
+
+    animation-name: run;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 5s ;
+
+
+    /* 
+    img{
+        animation-name: run;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 5s ;
+    } 
+        
+    */
+    
+ /* animation property shorthand method  
+ img { animation: fly 2s linear 5s infinite alternate forwards; } */
+
+ /* 
+animation-timing-function properties
+sample values:
+
+ease
+ease-in
+ease-out
+ease-in-out
+linear
+cubic-bezier(.69,.27.34,.7) Check: cubic-bezier.com/easings.net
+steps(10)
+
+
+*/
+
+    /* 
+
+    transition: 2s;
+    transform: Scale(.4) rotateY(-15deg);
+     */
+
+
+
+
+
+/* 
+
+transform Property
+
+Sample Values:
+translateX(100px)
+translateY(300px)
+translate(200px, 300px)
+scale(1.5)
+rotate(45deg)
+rotateX(45deg)
+rotateY(45deg)
+
+
+
+
+perspective Property for 3d Effect
+
+Example:
+body {
+    perspective: 400px;
+}
+element {
+    transform: rotateY(45deg);
+}
+
+
+
+
+Keyframe Animations
+
+Example:
+@keyframes my-animation {
+    from { starting position } 
+    to { finishing position } 
+}
+element {
+    animation-name: my-animation;
+    animation-duration: 2s;
+}
+
+
+
+
+
+
+
+
+
+
+Keyframe Animations two ways
+Example 1:
+@keyframes my-animation {
+    from { ... }
+    to { ... }
+}
+
+OR 
+
+Example 2:
+@keyframes my-animation {
+    0% { ... }
+    20% { ... }
+    50% { ... }
+    70% { ... }
+    100% { ... }
+}
+
+
+
+
+
+
+
+Shorthand animation Property
+Example:
+element {
+    animation: name duration timing-function delay 
+    iteration-count direction fill-mode;
+}
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+}
